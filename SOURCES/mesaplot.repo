@@ -1,0 +1,13 @@
+[mesaplot]
+name=MESAplot for Enterprise Linux 7
+baseurl=http://mleewise.com/mesaplot/rpm/el7
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-MESAPLOT-7
+
+[epel-source]
+name=MESAplot for Enterprise Linux 7 - Source
+baseurl=http://mleewise.com/mesaplot/rpm/el7/SRPMS
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-MESAPLOT-7
+gpgcheck=1
