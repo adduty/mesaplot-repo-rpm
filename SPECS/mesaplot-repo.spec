@@ -11,16 +11,12 @@ Source1: mesaplot.repo
 
 BuildArch: noarch
 
-BuildRequires:	
-Requires:	
-
 %description
 This package contains the MESAplot repository
 GPG key as well as configuration for yum.
 
 
 %prep
-%setup -q
 install -pm 644 %{SOURCE0} .
 install -pm 644 %{SOURCE1} .
 
