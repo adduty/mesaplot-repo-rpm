@@ -6,7 +6,7 @@ Summary: Installs MESAplot repository
 Group: System Environment/Base
 License: GPLv2
 URL: http://mleewise.com/mesaplot.php
-Source0: http://mleewise.com/mesaplot/rpm/RPM-GPG-KEY-MESAPLOT-7
+Source0: http://mleewise.com/mesaplot/rpm/RPM-GPG-KEY-MESAplot
 Source1: mesaplot.repo
 
 BuildArch: noarch
@@ -30,7 +30,7 @@ install -pm 644 %{SOURCE1} .
 rm -rf $RPM_BUILD_ROOT
 
 #GPG Key
-install -Dpm 644 %{SOURCE0} $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-MESAPLOT-7
+install -Dpm 644 %{SOURCE0} $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-MESAplot
 
 # yum
 install -dm 755 $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 %config(noreplace) /etc/yum.repos.d/*
-%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-MESAPLOT-7
+%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-MESAplot
 
 %changelog
 
